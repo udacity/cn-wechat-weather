@@ -1,9 +1,9 @@
 /*width 750rpx, height 760rpx
 760=174+280+56+250*/
 .weather-wrapper{
+  position: relative;
   padding-top: 174rpx;
   padding-bottom: 250rpx;
-  background-color: moccasin;
 }
 
 .temp {
@@ -18,4 +18,13 @@
   font-size: 40rpx;
   line-height: 56rpx;
   opacity: 0.65;
+}
+
+.weather-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
