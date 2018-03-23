@@ -1,5 +1,12 @@
+/*width 750rpx, height 760rpx
+760=174+280+56+250*/
+.weather-wrapper{
+  padding-top: 174rpx;
+  padding-bottom: 250rpx;
+  background-color: moccasin;
+}
+
 .temp {
-  margin-top:300rpx;
   text-align:center;
   font-size:200rpx;
   line-height:280rpx;
