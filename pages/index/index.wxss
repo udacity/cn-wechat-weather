@@ -5,3 +5,10 @@
   line-height:280rpx;
   opacity:0.8;
 }
+
+.weather {
+  text-align: center;
+  font-size: 40rpx;
+  line-height: 56rpx;
+  opacity: 0.65;
+}
