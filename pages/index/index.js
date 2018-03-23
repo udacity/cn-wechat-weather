@@ -1,7 +1,16 @@
+const weatherMap = {
+  'sunny': '晴天',
+  'cloudy': '多云',
+  'overcast': '阴',
+  'lightrain': '小雨',
+  'heavyrain': '大雨',
+  'snow': '雪'
+}
+
 Page({
   data: {
-    nowTemp: '14°',
-    nowWeather: '阴天'
+    nowTemp: '',
+    nowWeather: ''
   },
   onLoad() {
     wx.request({
@@ -13,7 +22,10 @@ Page({
         let result = res.data.result
         let temp = result.now.temp
         let weather = result.now.weather
-        console.log(temp, weather)
+        this.setData({
+          nowTemp: temp + '°',
+          nowWeather: weatherMap[weather]
+        })
       }
     })
   }
