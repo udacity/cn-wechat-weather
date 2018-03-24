@@ -28,6 +28,7 @@
 }
 
 .location-tips{
+  height: 42rpx; /*固定高度, 没字时也有高度*/
   margin-top:10rpx;
   text-align: center;
 }
