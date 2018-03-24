@@ -34,6 +34,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 40rpx;
+  margin-bottom: 45rpx;
 }
 
 .timetips-icon {
@@ -46,4 +47,16 @@
   font-size: 30rpx;
   line-height: 42rpx;
   opacity: 0.5;
+}
+
+.forecast-list {
+    display:flex
+}
+
+.forecast-item {
+    display:flex;
+    width: 120rpx;
+    flex-shrink: 0;
+    font-size: 36rpx;
+    line-height: 42rpx
 }
