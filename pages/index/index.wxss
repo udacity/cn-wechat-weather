@@ -57,6 +57,23 @@
     display:flex;
     width: 120rpx;
     flex-shrink: 0;
-    font-size: 36rpx;
-    line-height: 42rpx
+    flex-direction:column;
+    align-items:center;
+}
+
+.forecast-time {
+  font-size: 30rpx;
+  line-height: 42rpx;
+}
+
+.forecast-weather {
+  margin-top: 50rpx;
+  margin-bottom: 50rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.forecast-temp {
+  font-size: 40rpx;
+  line-height: 56rpx
 }
