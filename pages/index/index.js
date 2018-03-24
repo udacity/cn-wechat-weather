@@ -108,9 +108,9 @@ Page({
     })
   },
   onTapLocation(){
-      this.getLocation()
+      this.getCityAndWeather()
   },
-  getLocation() {
+  getCityAndWeather() {
     wx.getLocation({
       success: res=>{
         this.setData({
