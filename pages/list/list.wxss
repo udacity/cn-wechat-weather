@@ -1,0 +1,33 @@
+.date-item {
+  display: flex;
+  align-items: center;
+  height: 150rpx;
+  margin: 0 40rpx;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.day{
+  opacity: 0.8;
+  font-size: 40rpx;
+  line-height: 56rpx;
+}
+
+.date{
+  opacity: 0.5;
+  font-size: 25rpx;
+  line-height: 35rpx;
+}
+
+.temp{
+  flex-grow: 1;
+  padding-right: 60rpx;
+  text-align: center;
+  opacity: 0.8;
+  font-size: 40rpx;
+  line-height: 56rpx;
+}
+
+.weather-icon{
+  width: 90rpx;
+  height: 90rpx;
+}
