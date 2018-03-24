@@ -7,10 +7,20 @@ const weatherMap = {
   'snow': '雪'
 }
 
+const weatherColorMap = {
+  'sunny': '#cbeefd',
+  'cloudy': '#deeef6',
+  'overcast': '#c6ced2',
+  'lightrain': '#bdd5e1',
+  'heavyrain': '#c5ccd0',
+  'snow': '#aae1fc'
+}
+
 Page({
   data: {
     nowTemp: '',
-    nowWeather: ''
+    nowWeather: '',
+    nowWeatherBackground: ""
   },
   onLoad() {
     wx.request({
@@ -24,7 +34,12 @@ Page({
         let weather = result.now.weather
         this.setData({
           nowTemp: temp + '°',
-          nowWeather: weatherMap[weather]
+          nowWeather: weatherMap[weather],
+          nowWeatherBackground: '/images/' + weather + '-bg.png'
+        })
+        wx.setNavigationBarColor({
+          frontColor: '#000000',
+          backgroundColor: weatherColorMap[weather],
         })
       }
     })
