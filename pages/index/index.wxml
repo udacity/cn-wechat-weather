@@ -1,5 +1,5 @@
 <view class="weather-wrapper">
-  <view class="location-wrapper">
+  <view class="location-wrapper" bindtap='onTapLocation'>
     <view class="location">
       <image class="location-icon" src="/images/location-icon.png"></image>
       <view class="location-text">广州市</view>
