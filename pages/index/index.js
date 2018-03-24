@@ -109,7 +109,13 @@ Page({
   },
   onTapLocation(){
     if (this.data.locationAuthType === UNAUTHORIZED)
-      wx.openSetting()
+      wx.openSetting({
+        success: res => {
+          if (res.authSetting['scope.userLocation']) {
+            this.getLocation()
+          }
+        }
+      })
     else
       this.getLocation()
   },
