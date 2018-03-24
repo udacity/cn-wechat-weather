@@ -112,14 +112,14 @@ Page({
       wx.openSetting({
         success: res => {
           if (res.authSetting['scope.userLocation']) {
-            this.getLocation()
+            this.getCityAndWeather()
           }
         }
       })
     else
-      this.getLocation()
+      this.getCityAndWeather()
   },
-  getLocation() {
+  getCityAndWeather() {
     wx.getLocation({
       success: res=>{
         this.setData({
