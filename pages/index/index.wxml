@@ -1,11 +1,11 @@
 <view class="weather-wrapper">
-  <view class="location-wrapper" bindtap='onTapLocation'>
+  <button class="location-wrapper" open-type="{{ locationAuthType==1 ? 'openSetting' : ''}}" bindopensetting="onTapLocation" bindtap="onTapLocation" plain="true">
     <view class="location">
       <image class="location-icon" src="/images/location-icon.png"></image>
       <view class="location-text">{{city}}</view>
     </view>
     <view class="location-tips">{{locationTipsText}}</view>
-  </view>
+  </button>
   <view class="temp">{{nowTemp}}</view>
   <view class="weather">{{nowWeather}}</view>
   <image class="weather-bg" src="{{nowWeatherBackground}}" mode="scaleToFill"></image>
