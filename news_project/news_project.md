@@ -15,7 +15,7 @@
 ![alt text](https://github.com/udacity/cn-wechat-weather/blob/default-1-1/news_project/%E5%9B%BD%E5%86%85.PNG "国内新闻列表")
 ![alt text](https://github.com/udacity/cn-wechat-weather/blob/default-1-1/news_project/%E5%9B%BD%E9%99%85%E6%96%B0%E9%97%BB%E5%86%85%E5%AE%B9.PNG "国际新闻内容")
 
-图1.小程序“国内新闻”列表页                                * 图2.小程序“国际新闻”详情页
+图1.小程序“国内新闻”列表页&emsp; &nbsp; &nbsp; &nbsp; &emsp; &nbsp; &nbsp; &nbsp; 图2.小程序“国际新闻”详情页
 
 
 
