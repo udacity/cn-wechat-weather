@@ -44,6 +44,22 @@ Page({
     })
     this.getNow()
   },
+  onShow() {
+    wx.getSetting({
+      success: res=>{
+        let auth = res.authSetting['scope.userLocation']
+        if (auth && this.data.locationAuthType != AUTHORIZED) {
+          //权限从无到有
+          this.setData({
+            locationAuthType: AUTHORIZED,
+            locationTipsText: AUTHORIZED_TIPS
+          })
+          this.getLocation()
+        }
+        //权限从有到无未处理
+      }
+    })
+  },
   onPullDownRefresh(){
     this.getNow(() => {
       wx.stopPullDownRefresh()
