@@ -1,4 +1,4 @@
-# 天气 API 介绍
+# 新闻 API 介绍
 ## 域名 https://test-miniprogram.com
 ## GET /api/news/list
 
