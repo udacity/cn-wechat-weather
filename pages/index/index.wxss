@@ -1,4 +1,7 @@
-.title {
+.temp {
   margin-top:300rpx;
   text-align:center;
+  font-size:200rpx;
+  line-height:280rpx;
+  opacity:0.8;
 }
