@@ -4,5 +4,5 @@
     <view class="date">{{item.date}}</view>
   </view>
   <view class="temp">{{item.temp}}</view>
-  <image class="weather-icon" src="/images/sunny-icon.png"></image>
+  <image class="weather-icon" src="{{item.iconPath}}"></image>
 </view>
