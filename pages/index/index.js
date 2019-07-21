@@ -1,5 +1,5 @@
 Page({
   onLoad() {
-    consolo.log("Hello World!")
+    console.log("Hello World!")
   }
 })
